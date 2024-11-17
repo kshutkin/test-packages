@@ -1,0 +1,13 @@
+{
+    "name": "@tstpkgs/dual-exports-cjs",
+    "version": "0.0.0",
+    "main": "index.cjs",
+    "license": "MIT",
+    "exports": {
+        ".": {
+            "import": "./index.mjs",
+            "default": "./index.cjs"
+        },
+        "./package.json": "./package.json"
+    }
+}
