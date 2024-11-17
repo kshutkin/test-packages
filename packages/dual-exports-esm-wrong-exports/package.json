@@ -1,7 +1,7 @@
 {
     "name": "@tstpkgs/dual-exports-esm-wrong-exports",
     "type": "module",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "main": "index.mjs",
     "license": "MIT",
     "exports": {
