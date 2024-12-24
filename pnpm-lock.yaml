@@ -12,9 +12,29 @@ importers:
         specifier: ^2.27.9
         version: 2.27.9
 
+  packages/1mb: {}
+
+  packages/asymmetric-cjs-esm: {}
+
+  packages/asymmetric-esm-cjs: {}
+
   packages/basic-cjs: {}
 
   packages/basic-esm: {}
+
+  packages/cjs-require: {}
+
+  packages/default-and-named-export-cjs: {}
+
+  packages/default-and-named-export-esm: {}
+
+  packages/default-export-cjs: {}
+
+  packages/default-export-esm: {}
+
+  packages/default-subpath-exports-cjs: {}
+
+  packages/default-subpath-exports-esm: {}
 
   packages/dual-exports-cjs: {}
 
@@ -23,6 +43,90 @@ importers:
   packages/dual-exports-esm: {}
 
   packages/dual-exports-esm-wrong-exports: {}
+
+  packages/dual-subpath-exports-cjs: {}
+
+  packages/dual-subpath-exports-cjs-wrong-exports: {}
+
+  packages/dual-subpath-exports-esm: {}
+
+  packages/dual-subpath-exports-esm-wrong-exports: {}
+
+  packages/empty-cjs: {}
+
+  packages/empty-esm: {}
+
+  packages/esm-dynamic-import: {}
+
+  packages/intermediate-cjs-lib:
+    dependencies:
+      '@tstpkgs/dual-subpath-exports-cjs':
+        specifier: workspace:^
+        version: link:../dual-subpath-exports-cjs
+      '@tstpkgs/dual-subpath-exports-esm':
+        specifier: workspace:^
+        version: link:../dual-subpath-exports-esm
+
+  packages/intermediate-esm-lib:
+    dependencies:
+      '@tstpkgs/dual-subpath-exports-cjs':
+        specifier: workspace:^
+        version: link:../dual-subpath-exports-cjs
+      '@tstpkgs/dual-subpath-exports-esm':
+        specifier: workspace:^
+        version: link:../dual-subpath-exports-esm
+
+  packages/subpath-exports-cjs: {}
+
+  packages/subpath-exports-esm: {}
+
+  packages/top-level-cjs-lib:
+    dependencies:
+      '@tstpkgs/dual-subpath-exports-cjs':
+        specifier: workspace:^
+        version: link:../dual-subpath-exports-cjs
+      '@tstpkgs/dual-subpath-exports-esm':
+        specifier: workspace:^
+        version: link:../dual-subpath-exports-esm
+      '@tstpkgs/intermediate-cjs-lib':
+        specifier: workspace:^
+        version: link:../intermediate-cjs-lib
+
+  packages/top-level-cjs-lib-with-esm-dep:
+    dependencies:
+      '@tstpkgs/dual-subpath-exports-cjs':
+        specifier: workspace:^
+        version: link:../dual-subpath-exports-cjs
+      '@tstpkgs/dual-subpath-exports-esm':
+        specifier: workspace:^
+        version: link:../dual-subpath-exports-esm
+      '@tstpkgs/intermediate-esm-lib':
+        specifier: workspace:^
+        version: link:../intermediate-esm-lib
+
+  packages/top-level-esm-lib:
+    dependencies:
+      '@tstpkgs/dual-subpath-exports-cjs':
+        specifier: workspace:^
+        version: link:../dual-subpath-exports-cjs
+      '@tstpkgs/dual-subpath-exports-esm':
+        specifier: workspace:^
+        version: link:../dual-subpath-exports-esm
+      '@tstpkgs/intermediate-esm-lib':
+        specifier: workspace:^
+        version: link:../intermediate-esm-lib
+
+  packages/top-level-esm-lib-with-cjs-dep:
+    dependencies:
+      '@tstpkgs/dual-subpath-exports-cjs':
+        specifier: workspace:^
+        version: link:../dual-subpath-exports-cjs
+      '@tstpkgs/dual-subpath-exports-esm':
+        specifier: workspace:^
+        version: link:../dual-subpath-exports-esm
+      '@tstpkgs/intermediate-cjs-lib':
+        specifier: workspace:^
+        version: link:../intermediate-cjs-lib
 
   packages/with-legal-multiline-comment: {}
 
