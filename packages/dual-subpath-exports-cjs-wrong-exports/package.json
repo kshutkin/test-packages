@@ -1,0 +1,17 @@
+{
+    "name": "@tstpkgs/dual-subpath-exports-cjs-wrong-exports",
+    "version": "0.0.0",
+    "main": "index.cjs",
+    "license": "MIT",
+    "exports": {
+        ".": {
+            "require": "./index.cjs",
+            "default": "./index.mjs"
+        },
+        "./second": {
+            "require": "./second.cjs",
+            "default": "./second.mjs"
+        },
+        "./package.json": "./package.json"
+    }
+}

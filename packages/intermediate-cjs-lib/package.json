@@ -1,0 +1,10 @@
+{
+    "name": "@tstpkgs/intermediate-cjs-lib",
+    "version": "0.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "peerDependencies": {
+        "@tstpkgs/dual-subpath-exports-cjs": "workspace:^",
+        "@tstpkgs/dual-subpath-exports-esm": "workspace:^"
+    }
+}

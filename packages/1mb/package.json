@@ -1,0 +1,7 @@
+{
+    "name": "@tstpkgs/1mb",
+    "version": "0.0.0",
+    "type": "module",
+    "main": "index.js",
+    "license": "MIT"
+}

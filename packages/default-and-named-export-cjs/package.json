@@ -1,0 +1,6 @@
+{
+    "name": "@tstpkgs/default-and-named-export-cjs",
+    "version": "0.0.0",
+    "main": "index.js",
+    "license": "MIT"
+}

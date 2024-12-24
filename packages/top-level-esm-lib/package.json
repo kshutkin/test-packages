@@ -1,0 +1,14 @@
+{
+    "name": "@tstpkgs/top-level-esm-lib",
+    "type": "module",
+    "version": "0.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "dependencies": {
+        "@tstpkgs/intermediate-esm-lib": "workspace:^"
+    },
+    "peerDependencies": {
+        "@tstpkgs/dual-subpath-exports-cjs": "workspace:^",
+        "@tstpkgs/dual-subpath-exports-esm": "workspace:^"
+    }
+}

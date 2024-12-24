@@ -1,0 +1,1 @@
+# @tstpkgs/cjs-require

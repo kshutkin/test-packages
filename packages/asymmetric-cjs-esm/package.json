@@ -1,0 +1,11 @@
+{
+    "name": "@tstpkgs/asymmetric-cjs-esm",
+    "version": "0.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "exports": {
+        ".": "./index.js",
+        "./second": "./second.mjs",
+        "./package.json": "./package.json"
+    }
+}

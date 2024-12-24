@@ -1,0 +1,12 @@
+{
+    "name": "@tstpkgs/default-subpath-exports-esm",
+    "type": "module",
+    "version": "0.0.0",
+    "main": "./dist/index.mjs",
+    "license": "MIT",
+    "exports": {
+        ".": "./dist/index.mjs",
+        "./second": "./dist/second.mjs",
+        "./package.json": "./package.json"
+    }
+}

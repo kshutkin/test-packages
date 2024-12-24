@@ -1,0 +1,18 @@
+{
+    "name": "@tstpkgs/dual-subpath-exports-esm",
+    "type": "module",
+    "version": "0.0.0",
+    "main": "index.mjs",
+    "license": "MIT",
+    "exports": {
+        ".": {
+            "require": "./index.cjs",
+            "default": "./index.mjs"
+        },
+        "./second": {
+            "require": "./second.cjs",
+            "default": "./second.mjs"
+        },
+        "./package.json": "./package.json"
+    }
+}
