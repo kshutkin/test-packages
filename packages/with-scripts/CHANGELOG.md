@@ -1,0 +1,1 @@
+# @tstpkgs/with-scripts
